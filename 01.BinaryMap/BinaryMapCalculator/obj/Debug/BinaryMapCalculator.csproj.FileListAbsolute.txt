@@ -1,0 +1,5 @@
+c:\users\josh romine\documents\visual studio 2015\Projects\BinaryMap\BinaryMapCalculator\bin\Debug\BinaryMapCalculator.dll
+c:\users\josh romine\documents\visual studio 2015\Projects\BinaryMap\BinaryMapCalculator\bin\Debug\BinaryMapCalculator.pdb
+c:\users\josh romine\documents\visual studio 2015\Projects\BinaryMap\BinaryMapCalculator\obj\Debug\BinaryMapCalculator.csprojResolveAssemblyReference.cache
+c:\users\josh romine\documents\visual studio 2015\Projects\BinaryMap\BinaryMapCalculator\obj\Debug\BinaryMapCalculator.dll
+c:\users\josh romine\documents\visual studio 2015\Projects\BinaryMap\BinaryMapCalculator\obj\Debug\BinaryMapCalculator.pdb
