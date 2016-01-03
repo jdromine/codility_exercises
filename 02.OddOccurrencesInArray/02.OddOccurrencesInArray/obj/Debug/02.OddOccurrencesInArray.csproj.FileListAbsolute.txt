@@ -1,1 +1,6 @@
 C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\02.OddOccurrencesInArray\bin\Debug\02.OddOccurrencesInArray.exe.config
+C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\02.OddOccurrencesInArray\bin\Debug\02.OddOccurrencesInArray.exe
+C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\02.OddOccurrencesInArray\bin\Debug\02.OddOccurrencesInArray.pdb
+C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\02.OddOccurrencesInArray\obj\Debug\02.OddOccurrencesInArray.csprojResolveAssemblyReference.cache
+C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\02.OddOccurrencesInArray\obj\Debug\02.OddOccurrencesInArray.exe
+C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\02.OddOccurrencesInArray\obj\Debug\02.OddOccurrencesInArray.pdb
