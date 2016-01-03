@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4E8AF8C-05AD-4E6B-A0DC-B6CA7B267939}</ProjectGuid>
+    <ProjectGuid>{113A5C60-27D8-44D8-A382-000D8D68CA46}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinaryMap</RootNamespace>
-    <AssemblyName>BinaryMap</AssemblyName>
+    <RootNamespace>_02.OddOccurrencesInArray</RootNamespace>
+    <AssemblyName>02.OddOccurrencesInArray</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BinaryMapCalculator\BinaryMapCalculator.csproj">
-      <Project>{3cb8fbdd-6d53-485e-8469-b39aad38894e}</Project>
-      <Name>BinaryMapCalculator</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

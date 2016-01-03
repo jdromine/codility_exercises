@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMap", "BinaryMap\BinaryMap.csproj", "{C4E8AF8C-05AD-4E6B-A0DC-B6CA7B267939}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryGap", "BinaryMap\BinaryGap.csproj", "{C4E8AF8C-05AD-4E6B-A0DC-B6CA7B267939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMapTests", "BinaryMapTests\BinaryMapTests.csproj", "{437BE14A-58E3-4239-B86E-4C97FEC53DD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryGapTests", "BinaryMapTests\BinaryGapTests.csproj", "{437BE14A-58E3-4239-B86E-4C97FEC53DD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryMapCalculator", "BinaryMapCalculator\BinaryMapCalculator.csproj", "{3CB8FBDD-6D53-485E-8469-B39AAD38894E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryGapCalculator", "BinaryMapCalculator\BinaryGapCalculator.csproj", "{3CB8FBDD-6D53-485E-8469-B39AAD38894E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinaryMapCalculator\BinaryMapCalculator.csproj">
+    <ProjectReference Include="..\BinaryMapCalculator\BinaryGapCalculator.csproj">
       <Project>{3cb8fbdd-6d53-485e-8469-b39aad38894e}</Project>
-      <Name>BinaryMapCalculator</Name>
+      <Name>BinaryGapCalculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

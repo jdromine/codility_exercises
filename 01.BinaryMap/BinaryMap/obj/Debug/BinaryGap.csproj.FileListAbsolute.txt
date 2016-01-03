@@ -1,0 +1,8 @@
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\bin\Debug\BinaryMap.exe.config
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\bin\Debug\BinaryMap.exe
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\bin\Debug\BinaryMap.pdb
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\bin\Debug\BinaryMapCalculator.dll
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\bin\Debug\BinaryMapCalculator.pdb
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\obj\Debug\BinaryGap.csprojResolveAssemblyReference.cache
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\obj\Debug\BinaryMap.exe
+C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMap\obj\Debug\BinaryMap.pdb

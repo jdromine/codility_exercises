@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BinaryGapCalculator")]
+[assembly: AssemblyTitle("02.OddOccurrencesInArray")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BinaryGapCalculator")]
+[assembly: AssemblyProduct("02.OddOccurrencesInArray")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3cb8fbdd-6d53-485e-8469-b39aad38894e")]
+[assembly: Guid("113a5c60-27d8-44d8-a382-000d8d68ca46")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BinaryMapCalculator;
+using BinaryGapCalculator;
 
 namespace BinaryMapTests
 {

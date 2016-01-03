@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
-namespace BinaryMapCalculator
+namespace BinaryGapCalculator
 {
     public class Calculator
     {
@@ -11,26 +12,29 @@ namespace BinaryMapCalculator
             //convert the int to binary
             var result = Convert.ToString(n, 2).ToArray();
 
+            //convert all items in the result array to binary items
+            var allItems = result.Select((item, index) => new BinaryItem(item, index))
+                    .ToList();
+
             //find all of the zeroes
-            var zeroIndexes = result.Select((item, index) => new BinaryMapItem(item, index))
-                    .Where(i => i.Item == '0').ToList();
+            var zeroIndexes = allItems.Where(i => i.Item == 0).ToList();
 
             //if the binary array has no zeroes, no further work is required.
             if (zeroIndexes.Count == 0)
             {
                 return 0;
-            } else //loop through and find all of the binary maps and calculate the length if there are any
+            } else //loop through and find all of the binary gaps and calculate the length of each if there are any
             {
-                int maxBinaryMapLength = 0;
-                foreach (BinaryMapItem i in zeroIndexes)
+                int maxBinaryGapLength = 0;
+                foreach (BinaryItem i in zeroIndexes)
                 {
-                    if (isBinaryMap(i.Index, result))
+                    if (isBinaryGap(i.Index, allItems))
                     {
-                        maxBinaryMapLength = getMaxInt(maxBinaryMapLength, calculateMapLengthForItemIndex(i.Index, result));
+                        maxBinaryGapLength = getMaxInt(maxBinaryGapLength, calculateGapLengthForItemIndex(i.Index, result));
                     }
                 }
 
-                return maxBinaryMapLength;
+                return maxBinaryGapLength;
             }
         }
 
@@ -39,17 +43,17 @@ namespace BinaryMapCalculator
             return int1 > int2 ? int1 : int2;
         }
 
-        private static int calculateMapLengthForItemIndex(int itemIndex, char[] items)
+        private static int calculateGapLengthForItemIndex(int itemIndex, char[] items)
         {
-            int mapLengthToTheRight = -1;
-            int mapLengthToTheLeft = -1;
+            int gapLengthToTheRight = -1;
+            int gapLengthToTheLeft = -1;
 
-            //get the length to the right start with the index passed in which will set the length to zero
+            //get the length to the right 
             for (int i = itemIndex; i < items.Length; i++)
             {
-                if (items[i] == '0')
+                if (items[i] ==  '0')
                 {
-                    mapLengthToTheRight++;
+                    gapLengthToTheRight++;
                 }
                 else
                 {
@@ -57,12 +61,12 @@ namespace BinaryMapCalculator
                 }
             } 
 
-            //get the length to the left startng with the index passed in which will set the length to zero
+            //get the length to the left
             for (int i = itemIndex; i >= 0; i--)
             {
                 if (items[i] == '0')
                 {
-                    mapLengthToTheLeft++;
+                    gapLengthToTheLeft++;
                 } 
                 else
                 {
@@ -70,38 +74,27 @@ namespace BinaryMapCalculator
                 }
             }
 
-            return mapLengthToTheLeft + mapLengthToTheRight + 1;
+            return gapLengthToTheLeft + gapLengthToTheRight + 1; //Adding one to account for the current index
         }
 
-        private static bool isBinaryMap(int index, char[] items)
+        private static bool isBinaryGap(int index, List<BinaryItem> items)
         {
-            int maxToTheRight = 0;
-            int maxToTheLeft = 0;
+            int maxToTheRight = items.Where(x => x.Index >= index).Max(y => y.Item);
+            int maxToTheLeft = items.Where(x => x.Index <= index).Max(y => y.Item);
 
-            for (int i = index + 1; i < items.Length; i++)
-            {
-                int value = items[i] == '1' ? 1 : 0;
-                maxToTheRight = getMaxInt(maxToTheRight, value);
-            }
-
-            for (int i = index -1; i >= 0; i--)
-            {
-                int value = items[i] == '1' ? 1 : 0;
-                maxToTheLeft = getMaxInt(maxToTheLeft, value);
-            }
-
+            //if there is a one on both sides of the index, then the index is part of a binary gap
             return maxToTheRight + maxToTheLeft == 2;
         }
     }
 
-    public class BinaryMapItem
+    public class BinaryItem
     {
-        public char Item { get; set; }
+        public int Item { get; set; }
         public int Index { get; set; }
 
-        public BinaryMapItem(char item, int index)
+        public BinaryItem(char item, int index)
         {
-            this.Item = item;
+            this.Item = item == '1' ? 1 : 0;
             this.Index = index;
         }
     }
