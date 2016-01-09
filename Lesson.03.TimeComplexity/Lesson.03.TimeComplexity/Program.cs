@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace Lesson._03.TimeComplexity
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Calculator.CalculateTapeEquilibrium(new int[] { 3, 1, 2, 4, 3 }));
+            Calculator.CalculateMissingElement(new int[] { 2, 3, 1, 5 });
             Console.ReadLine();
         }
     }
@@ -25,8 +26,6 @@ namespace Lesson._03.TimeComplexity
             long leftSum = 0;
             long rightSum = totalSum;
 
-            rightSum = totalSum;
-
             for (int i = 0; i < N.Length; i++)
             {
                 leftSum += N[i];
@@ -37,6 +36,15 @@ namespace Lesson._03.TimeComplexity
             }
 
             return minimumDifference;
+        }
+
+        public static long CalculateMissingElement(int [] N)
+        {
+            double expectedLength = N.Length + 1;
+            double expectedSum = (expectedLength / 2) * (expectedLength + 1);
+            double actualSum = N.Sum();
+
+            return (long)expectedSum - (long)actualSum;
         }
 
     }
