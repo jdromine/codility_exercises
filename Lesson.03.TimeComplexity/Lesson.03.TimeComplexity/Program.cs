@@ -12,6 +12,7 @@ namespace Lesson._03.TimeComplexity
         static void Main(string[] args)
         {
             Calculator.CalculateMissingElement(new int[] { 2, 3, 1, 5 });
+            Calculator.CalculateFrogJump(10, 85, 30);
             Console.ReadLine();
         }
     }
@@ -40,11 +41,19 @@ namespace Lesson._03.TimeComplexity
 
         public static long CalculateMissingElement(int [] N)
         {
+            //Assuming that there is only one missing element
             double expectedLength = N.Length + 1;
             double expectedSum = (expectedLength / 2) * (expectedLength + 1);
             double actualSum = N.Sum();
 
             return (long)expectedSum - (long)actualSum;
+        }
+
+        public static long CalculateFrogJump(int X, int Y, int D)
+        {
+            //Assuming D <> 0 
+            int distanceToJump = (Y - X);
+            return distanceToJump / D + (distanceToJump % D == 0 ? 0 : 1);
         }
 
     }

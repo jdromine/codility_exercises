@@ -18,5 +18,11 @@ namespace Lesson3UnitTests
         {
             Assert.AreEqual(4,Calculator.CalculateMissingElement(new int[] {2,3,1,5}));
         }
+
+        [TestMethod]
+        public void Expect_FrogJumpCalculator_To_Return_Three()
+        {
+            Assert.AreEqual(3, Calculator.CalculateFrogJump(10, 85, 30));
+        }
     }
 }
