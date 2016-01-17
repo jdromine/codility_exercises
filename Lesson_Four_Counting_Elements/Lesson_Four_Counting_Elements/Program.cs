@@ -13,6 +13,7 @@ namespace Lesson_Four_Counting_Elements
             Calculator.CalculateMissingMinimumPositiveInteger(new int[] { 1, 3, 6, 5, 4, 1, 2 });
             Calculator.CalculateMinTimeFrogCanCrossRiver(new int[] { 1, 3, 1, 4, 2, 3, 5, 4 }, 5);
 
+            Calculator.CalculateCounters(new int[] { 3, 4, 4, 6, 1, 4, 4 }, 5);
             Console.ReadLine();
         }
     }
@@ -113,7 +114,33 @@ namespace Lesson_Four_Counting_Elements
                 return false;
             }
         }
+        
+        public static int[] CalculateCounters(int[] A, int N)
+        {
+            int[] counters = new int[N];
+            int maxCounter = 0;
+            int counterValue = 0;
 
+            for (int i=0; i<A.Length; i++)
+            {
+                for (int j=0; j< N; j++)
+                {
+                    counterValue = counters[j];
+                    int x = j + 1;
+                            
+                    if (A[i] == (N + 1))
+                    {
+                        counterValue = maxCounter;
+                    } else if( A[i] == x && 1 <= x && x <= N ){
+                        counterValue ++;
+                    }
 
+                    maxCounter = Math.Max(maxCounter, counterValue);
+                    counters[j] = counterValue;
+                }
+            }
+
+            return counters;
+        }
     }
 }
