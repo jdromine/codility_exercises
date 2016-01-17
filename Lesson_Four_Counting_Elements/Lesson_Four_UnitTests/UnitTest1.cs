@@ -36,5 +36,23 @@ namespace Lesson_Four_UnitTests
         {
             Assert.IsNull(Calculator.CalculateMinTimeFrogCanCrossRiver(new int[] { 1, 3, 1, 4, 2, 3, 2, 4 }, 5));
         }
+
+        [TestMethod]
+        public void Expect_ArrayPermutation_To_Be_True()
+        {
+            Assert.IsTrue(Calculator.IsArrayPermutation(new int[] { 1, 2, 3, 4 }));
+        }
+
+        [TestMethod]
+        public void Expect_ArrayPermutation_WithMissingElement_To_Be_False()
+        {
+            Assert.IsFalse(Calculator.IsArrayPermutation(new int[] { 1, 3, 4 }));
+        }
+
+        [TestMethod]
+        public void Expect_ArrayPermutation_WithDuplicateElements_To_Be_False()
+        {
+            Assert.IsFalse(Calculator.IsArrayPermutation(new int[] { 1, 2, 3, 4, 4 }));
+        }
     }
 }
