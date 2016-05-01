@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D229808-845E-4025-AB89-0BE348B31EC0}</ProjectGuid>
+    <ProjectGuid>{B572E545-EC59-45D0-995F-63A9CD9911DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lesson_Four_UnitTests</RootNamespace>
-    <AssemblyName>Lesson_Four_UnitTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Lesson.Four.CountingElements.Tests</RootNamespace>
+    <AssemblyName>Lesson.Four.CountingElements.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -45,18 +45,23 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FrogRiverOneComputerTests.cs" />
+    <Compile Include="PermCheckComputerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MaxCountersComputerTests.cs" />
+    <Compile Include="MissingIntegerComputerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lesson_Four_Counting_Elements\Lesson_Four_Counting_Elements.csproj">
-      <Project>{63c21088-222a-497e-befb-a9da3d94b6cb}</Project>
-      <Name>Lesson_Four_Counting_Elements</Name>
+    <ProjectReference Include="..\Lesson.Four.CountingElements\Lesson.Four.CountingElements.csproj">
+      <Project>{9ca34bb9-405a-4fd8-b34f-c16a2dca6459}</Project>
+      <Name>Lesson.Four.CountingElements</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

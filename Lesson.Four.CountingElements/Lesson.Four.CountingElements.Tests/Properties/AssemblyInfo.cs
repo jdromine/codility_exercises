@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Lesson_Four_Counting_Elements")]
+[assembly: AssemblyTitle("Lesson.Four.CountingElements.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Lesson_Four_Counting_Elements")]
+[assembly: AssemblyProduct("Lesson.Four.CountingElements.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("63c21088-222a-497e-befb-a9da3d94b6cb")]
+[assembly: Guid("b572e545-ec59-45d0-995f-63a9cd9911dc")]
 
 // Version information for an assembly consists of the following four values:
 //
