@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54729EE0-4E71-41FE-9E16-DC111F79932E}</ProjectGuid>
+    <ProjectGuid>{7093BACF-2F84-4109-9943-8F5FEC2ED397}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lesson3UnitTests</RootNamespace>
-    <AssemblyName>Lesson3UnitTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Lesson.Three.Tests</RootNamespace>
+    <AssemblyName>Lesson.Three.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -45,18 +45,22 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="FrogJumpComputerTests.cs" />
+    <Compile Include="MissingElementTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TapeEquilibriumComputerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lesson.03.TimeComplexity\Lesson.03.TimeComplexity.csproj">
-      <Project>{016eb165-9142-47fb-b5a0-b48aaced88f6}</Project>
-      <Name>Lesson.03.TimeComplexity</Name>
+    <ProjectReference Include="..\Lesson.Three\Lesson.Three.csproj">
+      <Project>{fd244285-e59a-4a39-843f-c91215de9504}</Project>
+      <Name>Lesson.Three</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
