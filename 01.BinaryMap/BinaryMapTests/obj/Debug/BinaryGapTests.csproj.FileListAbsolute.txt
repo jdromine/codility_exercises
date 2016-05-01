@@ -1,9 +1,0 @@
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\bin\Debug\BinaryMapTests.dll
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\bin\Debug\BinaryMapTests.pdb
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\bin\Debug\BinaryMapCalculator.dll
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\bin\Debug\BinaryMapCalculator.pdb
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\obj\Debug\BinaryGapTests.csprojResolveAssemblyReference.cache
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\obj\Debug\BinaryMapTests.dll
-C:\Users\Josh Romine\GIT\Codility\01.BinaryMap\BinaryMapTests\obj\Debug\BinaryMapTests.pdb
