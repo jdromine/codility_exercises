@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson.One
 {
+    // For a description of the problem see https://codility.com/programmers/task/binary_gap/
     public class BinaryGapComputer
     {
         public static int Compute(int n)

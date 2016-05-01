@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson.Five
 {
-    // For description of problem see https://codility.com/programmers/task/passing_cars/
+    // For a description of the problem see https://codility.com/programmers/task/passing_cars/
     public class PassingCarsComputer
     {
         public static int Compute(int[] A)

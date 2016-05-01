@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F234735E-734C-4D64-B008-13C2954FD105}</ProjectGuid>
+    <ProjectGuid>{0574ED96-F4DF-45C5-AB67-39202CAAEFC4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OddOccurrencesInArrayTests</RootNamespace>
-    <AssemblyName>OddOccurrencesInArrayTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Lesson.Two.Tests</RootNamespace>
+    <AssemblyName>Lesson.Two.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -50,13 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="OddOccurrencesInArrayComputerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\02.OddOccurrencesInArray\02.OddOccurrencesInArray.csproj">
-      <Project>{113a5c60-27d8-44d8-a382-000d8d68ca46}</Project>
-      <Name>02.OddOccurrencesInArray</Name>
+    <ProjectReference Include="..\Lesson.Two\Lesson.Two.csproj">
+      <Project>{0cdfbac2-6b17-42f7-8b2a-9e728a0a09a0}</Project>
+      <Name>Lesson.Two</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

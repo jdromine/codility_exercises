@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 
-namespace _02.OddOccurrencesInArray
+namespace Lesson.Two
 {
-    class Program
+    // For a description of the problem, see https://codility.com/programmers/task/odd_occurrences_in_array/
+    public class OddOccurrencesInArrayComputer
     {
-        static void Main(string[] args)
-        {
-            int result = Calculator.Calculate(new int[] { 9, 3, 9, 3, 9, 7, 9 });
-        }
-    }
-
-
-    public class Calculator
-    {
-        public static int Calculate(int[] N)
+        public static int Compute(int[] N)
         {
             var items = N.GroupBy(n => n).
                                  Select(group =>

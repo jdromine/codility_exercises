@@ -1,9 +1,0 @@
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\bin\Debug\OddOccurrencesInArrayTests.dll
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\bin\Debug\OddOccurrencesInArrayTests.pdb
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\bin\Debug\02.OddOccurrencesInArray.exe
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\bin\Debug\02.OddOccurrencesInArray.pdb
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\obj\Debug\OddOccurrencesInArrayTests.csprojResolveAssemblyReference.cache
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\obj\Debug\OddOccurrencesInArrayTests.dll
-C:\Users\Josh Romine\GIT\Codility\02.OddOccurrencesInArray\OddOccurrencesInArrayTests\obj\Debug\OddOccurrencesInArrayTests.pdb

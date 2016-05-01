@@ -1,16 +1,15 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using _02.OddOccurrencesInArray;
 
-namespace OddOccurrencesInArrayTests
+namespace Lesson.Two.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class OddOccurrencesInArrayComputerTests
     {
         [TestMethod]
         public void Expect_Calculate_to_Return_7()
         {
-            int result = Calculator.Calculate(new int[] { 9, 3, 9, 3, 9, 7, 9 });
+            int result = OddOccurrencesInArrayComputer.Compute(new int[] { 9, 3, 9, 3, 9, 7, 9 });
             Assert.AreEqual(7, result);
         }
     }
