@@ -55,6 +55,7 @@
     <Compile Include="CountDivComputerTests.cs" />
     <Compile Include="PassingCarsComputerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GenomicRangeQueryComputerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lesson.Five\Lesson.Five.csproj">

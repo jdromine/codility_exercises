@@ -18,7 +18,7 @@ namespace Lesson.Five
             for (int i=0; i<A.Length; i++)
             {
                 // If the car is moving east (0), then all cars moving west (1) with a greater array index value will be passed.
-                if (A[i] == 0)
+                if (A[i] == CarDirection.EAST)
                 {
                     countOfPassingCars += sumOfUnpassedCarsMovingWest;
                 } else // if the current car is moving west, we simply decrement the # of unpassed cars moving west.
@@ -29,5 +29,11 @@ namespace Lesson.Five
 
             return countOfPassingCars;
         }
+    }
+
+    public static class CarDirection
+    {
+        public const int EAST = 0;
+        public const int WEST = 1;
     }
 }
