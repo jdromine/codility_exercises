@@ -11,34 +11,35 @@ namespace Lesson.Four.CountingElements
     {
         public static bool Compute(int[] A)
         {
-            //Create hash to track each item in the array
-            Dictionary<int, int> items = new Dictionary<int, int>();
+            //Create hash to track each integer in the array and it's count of occurrences
+            Dictionary<int, int> integerOccurrencesInArray = new Dictionary<int, int>();
 
-            int maxItem = 0;
-            bool maxCountGreaterThanOne = false;
-            int currentItem;
+            int maxIntegerValueInArray = 0;
+            bool arrayContainsDuplicateIntegerValues = false;
+            int currentIntegerValueInArray;
 
             for (int i = 0; i < A.Length; i++)
             {
-                currentItem = A[i];
+                currentIntegerValueInArray = A[i];
 
                 //track the max item - if there are no missing elements, the max item value should equal the total number of elements
-                maxItem = Math.Max(maxItem, currentItem);
+                maxIntegerValueInArray = Math.Max(maxIntegerValueInArray, currentIntegerValueInArray);
 
                 //check for duplicates
-                if (items.ContainsKey(currentItem))
+                if (integerOccurrencesInArray.ContainsKey(currentIntegerValueInArray))
                 {
-                    items[currentItem]++;
-                    maxCountGreaterThanOne = true;
+                    integerOccurrencesInArray[currentIntegerValueInArray]++;
+                    arrayContainsDuplicateIntegerValues = true;
+                    break; //Exit loop since the array is not a permutation
                 }
                 else
                 {
-                    items.Add(currentItem, 1);
+                    integerOccurrencesInArray.Add(currentIntegerValueInArray, 1);
                 }
             }
 
             //finally check if the array is a permutation
-            if (items.Count == maxItem && !maxCountGreaterThanOne)
+            if (integerOccurrencesInArray.Count == maxIntegerValueInArray && !arrayContainsDuplicateIntegerValues)
             {
                 return true;
             }
