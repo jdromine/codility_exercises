@@ -12,29 +12,30 @@ namespace Lesson.Five
 
         public static int Compute(int A, int B, int K){
             //Find the first integer divisible by K between A and B
-            int firstDiv = (A + (A % K)); 
+            int firstDivisibleIntegerInRange = (A + (A % K)); 
 
-            if (firstDiv > B)
+            if (firstDivisibleIntegerInRange > B)
             {
+                //there are no integers divisible by K
                 return 0;
             }
 
-            //Find the last integer divisible by K between A and B
-            int lastDiv = (B - (B % K));
+            int lastDivisibleIntegerInRange = (B - (B % K));
 
-            if (lastDiv < A)
+            if (lastDivisibleIntegerInRange < A)
             {
+                //there are no integers divisible by K
                 return 0;
             }
 
-            //Check if there is a Div between A & B
-            if (lastDiv - firstDiv < K)
+            if (lastDivisibleIntegerInRange - firstDivisibleIntegerInRange < K)
             {
+                //there are no integers divisible by K
                 return 0;
             }
             else
             {
-                return ((lastDiv - firstDiv) / K) + 1;
+                return ((lastDivisibleIntegerInRange - firstDivisibleIntegerInRange) / K) + 1 //Add 1 to handle the case where there is only one integer divisible by K;
             }
         }
     }
