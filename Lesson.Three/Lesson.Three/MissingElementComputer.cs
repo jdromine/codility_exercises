@@ -12,11 +12,11 @@ namespace Lesson.Three
         public static long Compute(int[] N)
         {
             //Assuming that there is only one missing element
-            double expectedLength = N.Length + 1;
-            double expectedSum = (expectedLength / 2) * (expectedLength + 1);
-            double actualSum = N.Sum();
+            double expectedLengthOfArray = N.Length + 1;
+            double expectedSumOfIntegersInArray = (expectedLengthOfArray / 2) * (expectedLengthOfArray + 1);
+            double actualSumOfIntegersInArray = N.Sum();
 
-            return (long)expectedSum - (long)actualSum;
+            return (long)expectedSumOfIntegersInArray - (long)actualSumOfIntegersInArray;
         }
     }
 }

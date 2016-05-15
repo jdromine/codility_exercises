@@ -11,5 +11,13 @@ namespace Lesson.Three.Tests
         {
             Assert.AreEqual(3, FrogJumpComputer.Compute(10, 85, 30));
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.ArgumentException))]
+        public void Expect_ArgumentException_When_DistanceEqualsZero()
+        {
+            FrogJumpComputer.Compute(10, 85, 0);
+        }
+
     }
 }

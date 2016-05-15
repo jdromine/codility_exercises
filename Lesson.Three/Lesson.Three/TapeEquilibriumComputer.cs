@@ -11,17 +11,17 @@ namespace Lesson.Three
     {
         public static long? Compute(int[] N)
         {
-            long totalSum = N.Sum(i => i);
+            long totalSumOfIntegersInArray = N.Sum();
             long? minimumDifference = new long?();
             long currentDifference;
-            long leftSum = 0;
-            long rightSum = totalSum;
+            long sumOfIntegersBeforeCurrentIndex = 0;
+            long sumOfIntegersAfterCurrentIndex = totalSumOfIntegersInArray;
 
             for (int i = 0; i < N.Length; i++)
             {
-                leftSum += N[i];
-                rightSum -= N[i];
-                currentDifference = Math.Abs(rightSum - leftSum);
+                sumOfIntegersBeforeCurrentIndex += N[i];
+                sumOfIntegersAfterCurrentIndex -= N[i];
+                currentDifference = Math.Abs(sumOfIntegersAfterCurrentIndex - sumOfIntegersBeforeCurrentIndex);
 
                 minimumDifference = minimumDifference == null ? currentDifference : Math.Min((long)minimumDifference, currentDifference);
             }
