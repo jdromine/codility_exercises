@@ -12,7 +12,7 @@ namespace Lesson.Five
         public static int Compute(int[] A)
         {
             int sumOfUnpassedCarsMovingWest = A.Sum();
-            int countOfPassingCars = 0;
+            int countOfCarsPassed = 0;
 
             //Loop through all cars
             for (int i=0; i<A.Length; i++)
@@ -20,14 +20,14 @@ namespace Lesson.Five
                 // If the car is moving east (0), then all cars moving west (1) with a greater array index value will be passed.
                 if (A[i] == CarDirection.EAST)
                 {
-                    countOfPassingCars += sumOfUnpassedCarsMovingWest;
+                    countOfCarsPassed += sumOfUnpassedCarsMovingWest;
                 } else // if the current car is moving west, we simply decrement the # of unpassed cars moving west.
                 {
                     sumOfUnpassedCarsMovingWest -= A[i];
                 }           
             }
 
-            return countOfPassingCars;
+            return countOfCarsPassed;
         }
     }
 

@@ -6,33 +6,51 @@ using System.Threading.Tasks;
 
 namespace Lesson.Five
 {
+    // For a description of the problem see https://codility.com/programmers/task/genomic_range_query/
     public class GenomicRangeQueryComputer
     {
-        public static int[] Compute(string S, int[] P, int[] Q){
-            int queryStart = 0;
-            int queryEnd = 0;
+        private Dictionary<string, int> _nucleotideImpactFactors;
+
+        public GenomicRangeQueryComputer()
+        {
+            _nucleotideImpactFactors = new Dictionary<string, int>();
+            _nucleotideImpactFactors.Add("A", 1);
+            _nucleotideImpactFactors.Add("C", 2);
+            _nucleotideImpactFactors.Add("G", 3);
+            _nucleotideImpactFactors.Add("T", 4);
+        }
+
+        public int[] Compute(string S, int[] P, int[] Q){
+            int impactQueryStartingIndex = 0;
+            int impactQueryEndingIndex = 0;
             int[] nucleotides = GetNucleotidesFromDNASequence(S);
-            int[] queryResults = new int[P.Length];
+            int[] impactQueryResults = new int[P.Length];
 
             for(int i=0; i<P.Length; i++)
             {
-                queryStart = P[i];
-                queryEnd = Q[i];
+                impactQueryStartingIndex = P[i];
+                impactQueryEndingIndex = Q[i];
 
-                int queryResult = nucleotides[queryStart];
-
-                for (int j=queryStart; j <= queryEnd; j++)
-                {
-                    queryResult = Math.Min(queryResult, nucleotides[j]);
-                }
-
-                queryResults[i] = queryResult;
+                impactQueryResults[i] = GetMinimumImpactFactorForQuery(nucleotides, impactQueryStartingIndex, impactQueryEndingIndex);
             }
 
-            return queryResults;
+            return impactQueryResults;
         }
 
-        private static int[] GetNucleotidesFromDNASequence(string sequence)
+        private int GetMinimumImpactFactorForQuery(int[] nucleotides, int impactQueryStartingIndex, int impactQueryEndingIndex)
+        {
+            int minimumImpactQueryResult = nucleotides[impactQueryStartingIndex];
+
+            for (int j = impactQueryStartingIndex; j <= impactQueryEndingIndex; j++)
+            {
+                minimumImpactQueryResult = Math.Min(minimumImpactQueryResult, nucleotides[j]);
+            }
+
+            return minimumImpactQueryResult;
+        }
+
+
+        private  int[] GetNucleotidesFromDNASequence(string sequence)
         {
             int[] nucleotides = new int[sequence.Length];
 
@@ -44,28 +62,15 @@ namespace Lesson.Five
             return nucleotides;
         }
 
-        private static int GetNucleotideImpactFactor(string nucleotide)
+        private int GetNucleotideImpactFactor(string nucleotide)
         {
             int impactFactor = 0;
-            switch  (nucleotide) {
-                case "A":
-                    impactFactor = 1;
-                    break;
-                case "C":
-                    impactFactor = 2;
-                    break;
-                case "G":
-                    impactFactor = 3;
-                    break;
-                case "T":
-                    impactFactor = 4;
-                    break;
-                default:
-                    impactFactor = 0;
-                    break;
-            }
+
+            _nucleotideImpactFactors.TryGetValue(nucleotide, out impactFactor);
 
             return impactFactor;
         }
+
+
     }
 }

@@ -10,7 +10,9 @@ namespace Lesson.Five.ConsoleApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GenomicRangeQueryComputer.Compute("CAGCCTA", new int[] { 2, 5, 0 }, new int[] { 4, 5, 6 }));
+            GenomicRangeQueryComputer genomicRangeQueryComputer = new GenomicRangeQueryComputer();
+            Console.WriteLine(genomicRangeQueryComputer.Compute("CAGCCTAB", new int[] { 2, 5, 0 }, new int[] { 4, 5, 7 }));
+            //Console.WriteLine(MinAvgTwoSliceComputer.Compute(new int[] { 4, 2, 2, 5, 1, 5, 8 }, 7));
         }
     }
 }

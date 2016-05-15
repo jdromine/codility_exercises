@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CountDivComputer.cs" />
     <Compile Include="GenomicRangeQueryComputer.cs" />
+    <Compile Include="MinAvgTwoSliceComputer.cs" />
     <Compile Include="PassingCarsComputer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
